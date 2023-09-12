@@ -1,0 +1,194 @@
+/* @media (min-width: 688px) { .header { padding: 30px; } .header-navegation .logo { width: 30%; } .header-images .hamburguer { width: 10%; } .header .menu-hamburguer { width: calc(100% - 100px) ; } .header .title h1 { font-size: 70px; letter-spacing: 8px; margin: 150px auto 100px; } .introduction .description { padding: 55px; } .introduction .description h2 { font-size: 40px; margin: 40px 0 35px; } .introduction .description .text { font-size: 25px; line-height: 35px; margin-bottom: 45px; } .introduction .description .learn-more { font-size: 20px; } .services .graphic-design .graphic-description { bottom: 50px; padding: 40px; } .graphic-description h2 { font-size: 40px; margin-bottom: 60px; } .graphic-description p { font-size: 25px; line-height: 35px; } .services .photography .photography-description { bottom: 80px; padding: 40px; } .photography-description h2 { font-size: 40px; margin-bottom: 60px; } .photography-description p { padding: 20px; font-size: 25px; line-height: 35px; } .testimonials h2 { font-size: 26px; } .testimonials .testimonial p { max-width: 350px; margin: 50px auto; } .testimonials .testimonial span { font-size: 18px; } .testimonials .testimonial .name { margin-bottom: 10px; } .footer img { width: 30%; } .footer .footer-menu { justify-content: space-around; } .footer .footer-menu li a { font-size: 25px; } .footer .social li a { font-size: 25px; } .attribution { font-size: 15px; padding: 5px; } } */
+
+@media (min-width: 688px) {
+  .services .graphic-design .graphic-description {
+    padding: 0 100px;
+  }
+  .services .photography .photography-description {
+    padding: 0 100px;
+  }
+  .testimonials .testimonial p {
+    max-width: 500px;
+    margin: 50px auto 0px;
+  }
+  .footer img {
+    width: 20%;
+  }
+  .footer .footer-menu {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 940px) {
+  .header {
+    padding: 40px;
+  }
+  .header-navegation .logo {
+    width: 15%;
+    height: 10%;
+  }
+  .hamburguer {
+    display: none;
+  }
+  .menu-hamburguer {
+    display: none;
+  }
+  .header .header-navegation .menu {
+    display: flex;
+  }
+  .header .header-navegation .menu li a {
+    margin: 25px;
+    color: var(--White);
+  }
+  .header .header-navegation .menu span {
+    background-color: var(--White);
+    color: var(--Very-dark-desaturated-blue);
+    text-transform: uppercase;
+    padding: 22px 32px;
+    border-radius: 48px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+  }
+  .header .header-navegation .menu span:hover {
+    background-color: var(--White-transparent);
+  }
+  .header {
+    background-image: url(../images/desktop/image-header.jpg);
+    height: 100vh;
+  }
+
+  .header .title h1 {
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin: 90px auto;
+  }
+  .introduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .introduction .description {
+    padding: 95px;
+    text-align: start;
+  }
+  .introduction .description .text {
+    font-size: 20px;
+  }
+  .introduction .description .learn-more a {
+    font-size: 15px;
+  }
+  .Transform-your-brand {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .tranform-image {
+    grid-column: 2/2;
+  }
+  .introduction img {
+    width: 100%;
+    height: 100%;
+  }
+  .introduction .description {
+    width: 100%;
+    height: 100%;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .graphic-design {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    height: 100vh;
+  }
+
+  .services .graphic-design .graphic-description {
+    bottom: 35px;
+    padding: 55px;
+  }
+  .graphic-description p {
+    font-size: 22px;
+  }
+
+  .photography {
+    background-image: url(../images/desktop/image-photography.jpg);
+    height: 100vh;
+  }
+  .services .photography .photography-description {
+    bottom: 80px;
+  }
+  .photography-description h2 {
+    margin-bottom: 25px;
+  }
+
+  .photography-description p {
+    font-size: 22px;
+  }
+  .testimonials {
+    padding: 50px;
+    margin-top: 100px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .testimonials h2 {
+    position: absolute;
+    left: 300px;
+  }
+  .testimonial {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  .projects {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer img {
+    width: 20%;
+  }
+  .footer .footer-menu {
+    justify-content: center;
+  }
+  .footer .footer-menu li a {
+    font-size: 25px;
+    margin: 0 40px;
+  }
+  .footer .social {
+    margin-bottom: 30px;
+  }
+  .attribution {
+    padding: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-navegation .logo {
+    width: 15%;
+    height: 10%;
+  }
+  .header .title h1 {
+    font-size: 60px;
+    margin: 50px auto;
+    margin-bottom: 50px;
+  }
+
+  .introduction .description .text {
+    font-size: 16px;
+  }
+  .services .graphic-design .graphic-description {
+    left: 90px;
+  }
+  .graphic-description p,
+  .photography-description p {
+    font-size: 16px;
+    max-width: 350px;
+  }
+
+  .services .photography .photography-description {
+    bottom: 70px;
+    left: 60px;
+  }
+  .testimonials h2 {
+    left: 40%;
+  }
+
+  .footer .footer-menu li a {
+    font-size: 15px;
+  }
+}

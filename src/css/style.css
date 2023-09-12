@@ -1,0 +1,310 @@
+body {
+  font-size: 18px;
+  min-height: 100vh;
+  font-family: "Barlow", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  position: relative;
+}
+.header .header-navegation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-images .hamburguer {
+  cursor: pointer;
+}
+.header .header-navegation .menu {
+  display: none;
+}
+.header .menu-hamburguer {
+  display: none;
+  padding: 0;
+  position: absolute;
+  width: calc(100% - 40px);
+}
+.header .menu-hamburguer.active {
+  display: block;
+}
+.header .menu-hamburguer ul {
+  background-color: var(--White);
+  width: 100%;
+  padding: 45px 0;
+  text-align: center;
+  margin-top: 45px;
+}
+.header .menu-hamburguer a {
+  margin-bottom: 48px;
+  display: inline-block;
+  color: var(--Dark-grayish-blue);
+}
+.header .menu-hamburguer li:last-child a {
+  margin-bottom: 25px;
+}
+.header .menu-hamburguer span {
+  background-color: var(--Yellow);
+  color: var(--Very-dark-desaturated-blue);
+  text-transform: uppercase;
+  padding: 22px 32px;
+  border-radius: 48px;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+}
+
+.menu-hamburguer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-bottom: 26px solid var(--White);
+  border-left: 26px solid transparent;
+}
+
+.header .title {
+  text-align: center;
+}
+.header .title h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--White);
+  font-family: "Fraunces", serif;
+  letter-spacing: 6px;
+  margin: 120px 0;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.introduction img {
+  width: 100%;
+}
+.introduction .description {
+  padding: 60px;
+  text-align: center;
+}
+.introduction .description h2 {
+  font-family: "Fraunces", serif;
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 900;
+  font-size: 32px;
+  margin: 20px 0 25px;
+}
+.introduction .description .text {
+  color: var(--Dark-grayish-blue);
+  line-height: 27px;
+  margin-bottom: 35px;
+}
+.introduction .description .learn-more a {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--Very-dark-desaturated-blue);
+  position: relative;
+}
+.introduction .description .learn-more.yellow ::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120%;
+  left: -10%;
+  bottom: 0;
+  height: 10px;
+  background-color: var(--Yellow-Clean);
+  border-radius: 20px;
+  z-index: -1;
+}
+.introduction .description .learn-more.yellow:hover ::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120%;
+  left: -10%;
+  bottom: 0;
+  height: 10px;
+  background-color: var(--Yellow);
+  border-radius: 20px;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.introduction .description .learn-more.pink ::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120%;
+  left: -10%;
+  bottom: 0;
+  height: 10px;
+  background-color: var(--Red-Clean);
+  border-radius: 20px;
+  z-index: -1;
+}
+.introduction .description .learn-more.pink:hover ::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120%;
+  left: -10%;
+  bottom: 0;
+  height: 10px;
+  background-color: var(--Soft-red);
+  border-radius: 20px;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.graphic-design {
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 80vh;
+  background-position: center;
+  position: relative;
+}
+.services .graphic-design .graphic-description {
+  position: absolute;
+  text-align: center;
+  bottom: 100px;
+  padding: 25px;
+}
+.graphic-description h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: var(--Graphic-design);
+  margin-bottom: 25px;
+}
+.graphic-description p {
+  color: var(--Graphic-design);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+}
+.photography {
+  background-image: url(../images/mobile/image-photography.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.services .photography .photography-description {
+  position: absolute;
+  text-align: center;
+  bottom: 100px;
+  padding: 25px;
+}
+.photography-description h2 {
+  color: var(--Photography-text);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+.photography-description p {
+  color: var(--Photography-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding: 30px;
+}
+
+.testimonials h2 {
+  font-family: "Fraunces", serif;
+  color: var(--Grayish-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin: 30px 0 10px;
+}
+.testimonials .testimonial img {
+  width: 25%;
+  border-radius: 50%;
+  margin-top: 80px;
+}
+.testimonials .testimonial p {
+  color: var(--Very-dark-grayish-blue);
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.testimonials .testimonial .name {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+}
+.testimonials .testimonial span {
+  color: var(--Grayish-blue);
+  font-size: 14px;
+}
+.projects {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.projects img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: var(--Footer);
+  text-align: center;
+  padding: 30px;
+}
+.footer img {
+  margin: 40px auto;
+  width: 50%;
+  fill: var(--Graphic-design);
+}
+
+.footer .footer-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.footer .footer-menu li a {
+  color: var(--Graphic-design);
+  transition: 0.3s ease-in-out;
+}
+.footer .footer-menu li a:hover,
+.footer .social a:hover {
+  color: var(--White);
+}
+.footer .social ul {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.footer .social a {
+  color: var(--Graphic-design);
+  transition: 0.3s ease-in-out;
+}
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+}
+.attribution span {
+  color: var(--Footer);
+}
