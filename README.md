@@ -1,20 +1,20 @@
 # Sunnyside-agency-landing-page
 Este desafio foi retirado do site Frontend Mentor.<br> 
-[Clique aqui](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef) para conferir o desafio.
+[Clique aqui](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef) para visistar a página.
 
 ## Do que se trata esse desafio?
 Trata-se de uma Landing Page totalmente responsiva, incluindo menu de navegação em formato hamburguer.
 
 ## Qual interação é realizada?
 - O usuário ao visitar a Landing Page através de um dispositivo móvel, para navegar no menu, deve clicar no menu hambúrguer e a caixa de navegação é apresentada.
-   Ao clicar novamente, a caixa fecha.Dinâmica feita através do Javascript.
+   Ao clicar novamente, a caixa fecha. Essa dinâmica foi feita através do Javascript.
 - Há alguns efeitos inseridos através do hover.
   
 ## Habilidades desenvolvidas:
 - Uso de tags semânticas.
 - Uso de flexbox e Grid para ajustes dos elementos na tela.
 - Uso e manipulação dos elementos no JavaScript.
-- Uso de funções, eventos e condicionais.
+- Uso de funções e eventos.
 - Uso de mediaqueries para responsividade.
 
 ## Linguagens Utilizadas:
@@ -27,13 +27,16 @@ Trata-se de uma Landing Page totalmente responsiva, incluindo menu de navegaçã
 
 ## Veja como ficou:
 
+### Menu responsivo:
+<img src="./src/readme-videos/menu-responsivo.gif" alt=" video menu responsivo">
+ 
 ### Desktop:
-<img>
+<img src="./src/readme-videos/sunnyside-desktop.gif" alt="video landing page desktop">
 
 ### Tablet:
-<img >
+<img src="./src/readme-videos/sunnyside-tablet.gif" alt=" video landing page tablet">
  
 ### Mobile:
-<img >
+<img src="./src/readme-videos/sunnyside-mobile.gif" alt=" video landing page mobile">
 
 Para ver o projeto pronto, [clique aqui!](https://jessica-os.github.io/Sunnyside-agency-landing-page/)
