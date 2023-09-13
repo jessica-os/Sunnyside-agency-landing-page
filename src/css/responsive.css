@@ -1,6 +1,10 @@
-/* @media (min-width: 688px) { .header { padding: 30px; } .header-navegation .logo { width: 30%; } .header-images .hamburguer { width: 10%; } .header .menu-hamburguer { width: calc(100% - 100px) ; } .header .title h1 { font-size: 70px; letter-spacing: 8px; margin: 150px auto 100px; } .introduction .description { padding: 55px; } .introduction .description h2 { font-size: 40px; margin: 40px 0 35px; } .introduction .description .text { font-size: 25px; line-height: 35px; margin-bottom: 45px; } .introduction .description .learn-more { font-size: 20px; } .services .graphic-design .graphic-description { bottom: 50px; padding: 40px; } .graphic-description h2 { font-size: 40px; margin-bottom: 60px; } .graphic-description p { font-size: 25px; line-height: 35px; } .services .photography .photography-description { bottom: 80px; padding: 40px; } .photography-description h2 { font-size: 40px; margin-bottom: 60px; } .photography-description p { padding: 20px; font-size: 25px; line-height: 35px; } .testimonials h2 { font-size: 26px; } .testimonials .testimonial p { max-width: 350px; margin: 50px auto; } .testimonials .testimonial span { font-size: 18px; } .testimonials .testimonial .name { margin-bottom: 10px; } .footer img { width: 30%; } .footer .footer-menu { justify-content: space-around; } .footer .footer-menu li a { font-size: 25px; } .footer .social li a { font-size: 25px; } .attribution { font-size: 15px; padding: 5px; } } */
+
 
 @media (min-width: 688px) {
+    .header .title h1{
+        margin-top: 200px;
+        margin-bottom: 270px;
+    }
   .services .graphic-design .graphic-description {
     padding: 0 100px;
   }
@@ -61,6 +65,8 @@
     font-size: 50px;
     letter-spacing: 8px;
     margin: 90px auto;
+    margin-top: 150px;
+
   }
   .introduction {
     display: grid;
@@ -165,7 +171,9 @@
   .header .title h1 {
     font-size: 60px;
     margin: 50px auto;
+    margin-top: 50px;
     margin-bottom: 50px;
+ 
   }
 
   .introduction .description .text {
